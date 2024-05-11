@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -56,7 +57,7 @@ class CategoryCard extends StatelessWidget {
               color: const Color(0xFFFFECDF),
               borderRadius: BorderRadius.circular(10),
             ),
-            child: SvgPicture.asset(icon),
+            child: SvgPicture.asset(icon,color: kPrimaryColor,),
           ),
           const SizedBox(height: 4),
           Text(text, textAlign: TextAlign.center)
